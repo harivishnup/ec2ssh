@@ -8,7 +8,7 @@ _ec2ssh(){
         echo "Usage: ec2ssh <ec2-instance-hostname>"
     else
         echo "Connecting to $1 #..."
-        ssh -i $PPK $1
+        ssh -i $PPK ec2-user@$1
     fi
 }
 alias ec2ssh='_ec2ssh'
