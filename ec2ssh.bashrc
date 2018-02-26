@@ -1,7 +1,7 @@
 # Append below lines to your .bashrc
 # START ec2ssh .bashrc
 # Source https://github.com/harivishnup/ec2ssh
-PPK=~/conf/private.ppk
+PPK=~/conf/private.pem
 _ec2ssh(){
     if [ $# -lt 1 ]
     then
